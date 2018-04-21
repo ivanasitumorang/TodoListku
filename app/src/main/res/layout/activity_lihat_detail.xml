@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatDetailActivity">
+
+    <TextView
+        android:id="@+id/labelJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Judul Todo : "
+        />
+    <TextView
+        android:id="@+id/judulTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelJudul"
+        android:textSize="25sp"
+        android:text="Judul Todo"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:id="@+id/labelDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Deskripsi Todo"
+        android:layout_below="@+id/judulTodo"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/deskripsiTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelDeskripsi"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Deskripsi Todo"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deskripsiTodo"
+        android:layout_marginTop="34dp"
+        android:text=" Kembali"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/ic_arrow_back"
+        android:onClick="kembali"/>
+
+</RelativeLayout>

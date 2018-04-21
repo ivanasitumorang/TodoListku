@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateTodoActivity">
+
+    <TextView
+        android:id="@+id/labelJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul Todo"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/judulTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/labelJudul"/>
+
+    <TextView
+        android:id="@+id/labelDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Deskripsi Todo"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/judulTodo"/>
+    <EditText
+        android:id="@+id/deskripsiTodo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
+        android:layout_below="@+id/labelDeskripsi"
+        android:lines="10"/>
+
+    <Button
+        android:id="@+id/updateKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/deskripsiTodo"
+        android:layout_marginTop="30dp"
+        android:text="Kembali"
+        style="?borderlessButtonStyle"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_arrow_back"/>
+
+    <Button
+        android:id="@+id/updateSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:drawableLeft="@drawable/ic_done"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/deskripsiTodo"
+        style="?borderlessButtonStyle"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
